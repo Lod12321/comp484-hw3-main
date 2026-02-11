@@ -9,14 +9,15 @@
     <header role="banner">
       <h1>Comp 484</h1>
       <h2>HTML Reference</h2>
+      <!-- added the document-relative links here, as well a link to csun's website included in the following footer -->
       <nav role="navigation">
         <ul>
-          <li>Introduction to HTML</li>
-          <li>HTML syntax</li>
-          <li>Structuring pages</li>
-          <li>Creating links</li>
-          <li>HTML reference</li>
-          <li>Next steps</li>
+          <li><a href="index.html" title="Learn the basics of HTML and its role in web design">Introduction to HTML</a></li>
+          <li><a href="syntax.html" title="Understand HTML tags, elements, and proper syntax">HTML syntax</a></li>
+          <li><a href="structure.html" title="Learn how to organize and structure page content semantically">Structuring pages</a></li>
+          <li><a href="links.html" title="Discover how to create links to pages and external sites">Creating links</a></li>
+          <li><a href="reference.html" title="Quick reference for HTML terms and character entities">HTML reference</a></li>
+          <li><a href="next.html" title="Get advice on next steps for learning web design">Next steps</a></li>
         </ul>
       </nav>
     </header>
@@ -25,7 +26,7 @@
         <header>
           <p>
             On this page you&rsquo;ll find a quick reference to common HTML
-            terms and a table of frequently used named character entities.
+            terms and a <!-- The <a> tag wraps the text that should be clickable, and href="#character-entities" points to the element with id="character-entities" below --><a href="#character-entities">table of frequently used named character entities</a>.
           </p>
         </header>
         <section>
@@ -159,7 +160,9 @@
           </dl>
         </section>
         <section>
+          <!--  Adding id="character-entities" creates a target for fragment identifier links that jump to this specific section when clicked -->
           <table
+            id="character-entities"
             border="1"
             cellspacing="0"
             cellpadding="0"

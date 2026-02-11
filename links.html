@@ -9,14 +9,15 @@
     <header role="banner">
       <h1>Comp484</h1>
       <h2>Creating Links</h2>
+      <!-- added the document-relative links here, as well a link to csun's website included in the following footer -->
       <nav role="navigation">
         <ul>
-          <li>Introduction to HTML</li>
-          <li>HTML syntax</li>
-          <li>Structuring pages</li>
-          <li>Creating links</li>
-          <li>HTML reference</li>
-          <li>Next steps</li>
+          <li><a href="index.html" title="Learn the basics of HTML and its role in web design">Introduction to HTML</a></li>
+          <li><a href="syntax.html" title="Understand HTML tags, elements, and proper syntax">HTML syntax</a></li>
+          <li><a href="structure.html" title="Learn how to organize and structure page content semantically">Structuring pages</a></li>
+          <li><a href="links.html" title="Discover how to create links to pages and external sites">Creating links</a></li>
+          <li><a href="reference.html" title="Quick reference for HTML terms and character entities">HTML reference</a></li>
+          <li><a href="next.html" title="Get advice on next steps for learning web design">Next steps</a></li>
         </ul>
       </nav>
     </header>
@@ -168,7 +169,10 @@
       </article>
     </main>
     <footer role="contentinfo">
-      <p>CSUN 18111 Nordhoff St Northridge, CA 91330</p>
+      <!-- Using absolute URLs with target="_blank" to open external sites in a new tab/window-->
+      <p><a href="https://www.csun.edu" title="Visit California State University, Northridge official website" target="_blank">CSUN</a> 18111 Nordhoff St Northridge, CA 91330</p>
+      <!-- Providing a way for users to follow the university on Twitter by linking to the official @csunorthridge profile -->
+      <p><a href="https://twitter.com/csunorthridge" title="Follow us on Twitter for campus news and updates" target="_blank">Follow us on Twitter</a></p>
     </footer>
   </body>
 </html>
